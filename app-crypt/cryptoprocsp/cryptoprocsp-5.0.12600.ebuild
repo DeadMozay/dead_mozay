@@ -7,7 +7,7 @@ inherit rpm
 
 DESCRIPTION="Cryptopro package"
 HOMEPAGE="http://www.cryptopro.ru"
-DOWNLOADPAGE="ftp://ftp.linuxbuh.ru/linuxbuh/app-crypt/cryptoprocsp"
+DOWNLOADPAGE="https://cryptopro.ru/sites/default/files/private/csp/50/12600/"
 #SRC_URI="linux-amd64.tgz"
 SRC_URI="$DOWNLOADPAGE/${P}.tgz"
 
@@ -44,27 +44,27 @@ src_unpack () {
 
 #Kryptographic Service Provider
 if use lsb-kc1; then
-	rpm_unpack lsb-cprocsp-kc1-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-kc1-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use lsb-kc2; then
-	rpm_unpack lsb-cprocsp-kc2-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-kc2-64-5.0.12600-6.x86_64.rpm
 fi
 
 #stunnel
 if use stunnel; then
-	rpm_unpack cprocsp-stunnel-64-5.0.12500-6.x86_64.rpm
-	rpm_unpack cprocsp-stunnel-msspi-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-stunnel-64-5.0.12600-6.x86_64.rpm
+	rpm_unpack cprocsp-stunnel-msspi-64-5.0.12600-6.x86_64.rpm
 fi
 
 #cptools gui
 if use cptools; then
-	rpm_unpack cprocsp-cptools-gtk-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-cptools-gtk-64-5.0.12600-6.x86_64.rpm
 fi
 
 #PKCS #11 library
 if use lsb-pkcs11; then
-	rpm_unpack lsb-cprocsp-pkcs11-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-pkcs11-64-5.0.12600-6.x86_64.rpm
 fi
 
 #drivers smartcard and token
@@ -77,127 +77,127 @@ if use rdr-jacarta; then
 fi
 
 if use lsb-rdr-accord; then
-	rpm_unpack lsb-cprocsp-rdr-accord-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-rdr-accord-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use lsb-rdr-ancud; then
-	rpm_unpack lsb-cprocsp-rdr-ancud-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-rdr-ancud-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use lsb-rdr-crypton; then
-	rpm_unpack lsb-cprocsp-rdr-crypton-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-rdr-crypton-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use lsb-rdr-maxim; then
-	rpm_unpack lsb-cprocsp-rdr-maxim-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-rdr-maxim-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use lsb-rdr-sobol; then
-	rpm_unpack lsb-cprocsp-rdr-sobol-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-rdr-sobol-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use lsb-rdr-vityaz; then
-	rpm_unpack lsb-cprocsp-rdr-vityaz-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-rdr-vityaz-64-5.0.12600-6.x86_64.rpm
 fi
 
 
 if use apache-modssl; then
-	rpm_unpack cprocsp-apache-modssl-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-apache-modssl-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use curl; then
-	rpm_unpack cprocsp-curl-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-curl-64-5.0.12600-6.x86_64.rpm
 fi
 
 #ipsec
 if use ipsec-genpsk; then
-	rpm_unpack cprocsp-ipsec-genpsk-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-ipsec-genpsk-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use ipsec-ike; then
-	rpm_unpack cprocsp-ipsec-ike-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-ipsec-ike-64-5.0.12600-6.x86_64.rpm
 fi
 
 #rdr
 if use rdr-cloud; then
-	rpm_unpack cprocsp-rdr-cloud-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-cloud-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-cloud-gtk; then
-	rpm_unpack cprocsp-rdr-cloud-gtk-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-cloud-gtk-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-cpfkc; then
-	rpm_unpack cprocsp-rdr-cpfkc-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-cpfkc-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-cryptoki; then
-	rpm_unpack cprocsp-rdr-cryptoki-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-cryptoki-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-edoc; then
-	rpm_unpack cprocsp-rdr-edoc-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-edoc-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-emv; then
-	rpm_unpack cprocsp-rdr-emv-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-emv-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-esmart; then
-	rpm_unpack cprocsp-rdr-esmart-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-esmart-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-gui-gtk; then
-	rpm_unpack cprocsp-rdr-gui-gtk-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-gui-gtk-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-infocrypt; then
-	rpm_unpack cprocsp-rdr-infocrypt-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-infocrypt-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-inpaspot; then
-	rpm_unpack cprocsp-rdr-inpaspot-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-inpaspot-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-kst; then
-	rpm_unpack cprocsp-rdr-kst-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-kst-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-mskey; then
-	rpm_unpack cprocsp-rdr-mskey-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-mskey-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-novacard; then
-	rpm_unpack cprocsp-rdr-novacard-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-novacard-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-pcsc; then
-	rpm_unpack cprocsp-rdr-pcsc-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-pcsc-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-relay; then
-	rpm_unpack cprocsp-rdr-relay-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-relay-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-rosan; then
-	rpm_unpack cprocsp-rdr-rosan-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-rosan-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-rutoken; then
-	rpm_unpack cprocsp-rdr-rutoken-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack cprocsp-rdr-rutoken-64-5.0.12600-6.x86_64.rpm
 fi
 
 #lsb
 if use lsb-capilite; then
-	rpm_unpack lsb-cprocsp-capilite-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-capilite-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use lsb-rcrypt; then
-	rpm_unpack lsb-cprocsp-rcrypt-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-rcrypt-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use lsb-rdr; then
-	rpm_unpack lsb-cprocsp-rdr-64-5.0.12500-6.x86_64.rpm
+	rpm_unpack lsb-cprocsp-rdr-64-5.0.12600-6.x86_64.rpm
 fi
 
 
@@ -211,31 +211,31 @@ if use noarch-suse; then
 fi
 
 if use noarch-drv-devel; then
-	rpm_unpack cprocsp-drv-devel-5.0.12500-6.noarch.rpm
+	rpm_unpack cprocsp-drv-devel-5.0.12600-6.noarch.rpm
 fi
 
 if use noarch-ipsec-devel; then
-	rpm_unpack cprocsp-ipsec-devel-5.0.12500-6.noarch.rpm
+	rpm_unpack cprocsp-ipsec-devel-5.0.12600-6.noarch.rpm
 fi
 
 if use noarch-xer2print; then
-	rpm_unpack cprocsp-xer2print-5.0.12500-6.noarch.rpm
+	rpm_unpack cprocsp-xer2print-5.0.12600-6.noarch.rpm
 fi
 
 if use noarch-lsb-base; then
-	rpm_unpack lsb-cprocsp-base-5.0.12500-6.noarch.rpm
+	rpm_unpack lsb-cprocsp-base-5.0.12600-6.noarch.rpm
 fi
 
 if use noarch-lsb-ca-certs; then
-	rpm_unpack lsb-cprocsp-ca-certs-5.0.12500-6.noarch.rpm
+	rpm_unpack lsb-cprocsp-ca-certs-5.0.12600-6.noarch.rpm
 fi
 
 if use noarch-lsb-devel; then
-	rpm_unpack lsb-cprocsp-devel-5.0.12500-6.noarch.rpm
+	rpm_unpack lsb-cprocsp-devel-5.0.12600-6.noarch.rpm
 fi
 
 if use noarch-lsb-import-ca-certs; then
-	rpm_unpack lsb-cprocsp-import-ca-certs-5.0.12500-6.noarch.rpm
+	rpm_unpack lsb-cprocsp-import-ca-certs-5.0.12600-6.noarch.rpm
 fi
 
 #src
@@ -244,11 +244,11 @@ if use src-accord_random; then
 fi
 
 if use src-cprocsp-drv; then
-	rpm_unpack cprocsp-drv-64-5.0.12500-6.src.rpm
+	rpm_unpack cprocsp-drv-64-5.0.12600-6.src.rpm
 fi
 
 if use src-ipsec-esp; then
-	rpm_unpack cprocsp-ipsec-esp-64-5.0.12500-6.src.rpm
+	rpm_unpack cprocsp-ipsec-esp-64-5.0.12600-6.src.rpm
 fi
 
 if use src-sobol; then
@@ -264,7 +264,7 @@ src_install() {
 
     cp -vR ${S}/* ${D}/
     rm -f ${D}/etc/init.d/cprocsp
-    cp -f ${FILESDIR}/cprocsp-5.0.12500 ${D}/etc/init.d/cprocsp
+    cp -f ${FILESDIR}/cprocsp-5.0.12600 ${D}/etc/init.d/cprocsp
 }
 
 #pkg_config() {
@@ -291,7 +291,7 @@ pkg_postinst() {
 #    fi
 
     cp -f ${FILESDIR}/config64-donnstro.ini /etc/opt/cprocsp/config64-donnstro.ini
-    cp -f ${FILESDIR}/config64-5.0.12500.ini /etc/opt/cprocsp/config64-5.0.12500.ini
+    cp -f ${FILESDIR}/config64-5.0.12600.ini /etc/opt/cprocsp/config64-5.0.12600.ini
     cp -f ${FILESDIR}/goodconfig64.ini /etc/opt/cprocsp/goodconfig64.ini
 
 
@@ -299,7 +299,7 @@ pkg_postinst() {
     elog "Запустите /etc/init.d/cprocsp start"
     elog "ОБЯЗАТЕЛЬНО!! Запустите скрипт cprocsp_postinstal_all_scripts.sh командой 'bash /etc/opt/cprocsp/cprocsp_postinstal_all_scripts.sh'"
     elog "Eсли вам не подходит файл config64.ini созданный скриптом cprocsp_postinstal_all_scripts.sh,"
-    elog "то переименуйте один из ini файлов в каталоге /etc/opt/cprocsp (для версии 5.0.12500 проверялся файл config64-5.0.12500.ini"
+    elog "то переименуйте один из ini файлов в каталоге /etc/opt/cprocsp (для версии 5.0.12600 проверялся файл config64-5.0.12600.ini"
 
 }
 
