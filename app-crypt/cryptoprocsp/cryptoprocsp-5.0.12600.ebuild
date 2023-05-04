@@ -7,9 +7,9 @@ inherit rpm
 
 DESCRIPTION="Cryptopro package"
 HOMEPAGE="http://www.cryptopro.ru"
-DOWNLOADPAGE="https://cryptopro.ru/sites/default/files/private/csp/50/12600/"
-#SRC_URI="linux-amd64.tgz"
-SRC_URI="$DOWNLOADPAGE/${P}.tgz"
+DOWNLOADPAGE="https://cryptopro.ru/sites/default/files/private/csp/50/12600"
+SRC_URI="linux-amd64.tgz"
+#SRC_URI="$DOWNLOADPAGE/${P}.tgz"
 
 LICENSE="Cryptopro"
 SLOT="0"
