@@ -73,7 +73,7 @@ if use ifd-rutokens; then
 fi
 
 if use rdr-jacarta; then
-	rpm_unpack cprocsp-rdr-jacarta-64-5.0.0.1237-4.x86_64.rpm
+	rpm_unpack cprocsp-rdr-jacarta-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use lsb-rdr-accord; then
