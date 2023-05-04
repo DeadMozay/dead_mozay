@@ -17,7 +17,7 @@ KEYWORDS="~amd64"
 IUSE="+lsb-kc1 lsb-kc2 +stunnel +cptools +lsb-pkcs11 +ifd-rutokens \
 +rdr-jacarta +lsb-rdr-accord +lsb-rdr-ancud +lsb-rdr-crypton +lsb-rdr-maxim \
 +lsb-rdr-sobol +lsb-rdr-vityaz +apache-modssl +curl +ipsec-genpsk +ipsec-ike \
-+rdr-cloud +rdr-cloud-gtk +rdr-cpfkc +rdr-cryptoki +rdr-edoc +rdr-emv \
++rdr-cloud +rdr-cpfkc +rdr-cryptoki +rdr-edoc +rdr-emv \
 +rdr-esmart +rdr-gui-gtk +rdr-infocrypt +rdr-inpaspot +rdr-kst +rdr-mskey \
 +rdr-novacard +rdr-pcsc +rdr-relay +rdr-rosan +rdr-rutoken +lsb-capilite \
 +lsb-rcrypt +lsb-rdr noarch-altlinux noarch-suse noarch-ipsec-devel noarch-drv-devel \
@@ -121,10 +121,6 @@ fi
 #rdr
 if use rdr-cloud; then
 	rpm_unpack cprocsp-rdr-cloud-64-5.0.12600-6.x86_64.rpm
-fi
-
-if use rdr-cloud-gtk; then
-	rpm_unpack cprocsp-rdr-cloud-gtk-64-5.0.12600-6.x86_64.rpm
 fi
 
 if use rdr-cpfkc; then
