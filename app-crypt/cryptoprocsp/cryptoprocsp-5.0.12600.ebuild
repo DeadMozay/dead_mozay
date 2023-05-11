@@ -40,14 +40,6 @@ src_unpack () {
 	rpm_unpack cprocsp-stunnel${SUFF}
 	rpm_unpack cprocsp-rdr-rutoken${SUFF}
 	rpm_unpack cprocsp-compat-altlinux-64-1.0.0-1.noarch.rpm
-	rpm_unpack cprocsp-cpopenssl${SUFF}
-	rpm_unpack cprocsp-cpopenssl-110${SUFF}
-	rpm_unpack cprocsp-cpopenssl-110-base-${PV}-6.noarch.rpm
-	rpm_unpack cprocsp-cpopenssl-110-devel-${PV}-6.noarch.rpm
-	rpm_unpack cprocsp-cpopenssl-110-gost${SUFF}
-	rpm_unpack cprocsp-cpopenssl-base-${PV}-6.noarch.rpm
-	rpm_unpack cprocsp-cpopenssl-devel-${PV}-6.noarch.rpm
-	rpm_unpack cprocsp-cpopenssl-gost${SUFF}
 	rpm_unpack cprocsp-cptools-gtk${SUFF}
 	rpm_unpack cprocsp-curl${SUFF}
 	rpm_unpack cprocsp-drv-devel-${PV}-6.noarch.rpm
@@ -81,6 +73,9 @@ src_unpack () {
 	rpm_unpack lsb-cprocsp-rdr-crypton${SUFF}
 	rpm_unpack lsb-cprocsp-rdr-maxim${SUFF}
 	rpm_unpack lsb-cprocsp-rdr-sobol${SUFF}
+	rpm_unpack cprocsp-pki-cades-64-2.0.14660-1.amd64.rpm
+	rpm_unpack cprocsp-pki-phpcades-64-2.0.14660-1.amd64.rpm
+	rpm_unpack cprocsp-pki-plugin-64-2.0.14660-1.amd64.rpm
 
 	rm ${S}/lib64/ld-lsb-x86-64.so.3
 }
