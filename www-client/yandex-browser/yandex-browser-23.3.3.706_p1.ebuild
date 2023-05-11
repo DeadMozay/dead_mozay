@@ -119,7 +119,7 @@ src_install() {
 		size="${icon##*/product_logo_}"
 		size=${size%.png}
 		dodir "/usr/share/icons/hicolor/${size}x${size}/apps"
-		newicon -s "${size}" "$icon" "${MY_PN}.png"
+		newicon -s "${size}" "$icon" "yandex-browser.png"
 	done
 
 	fowners root:root "/${YANDEX_HOME}/yandex_browser-sandbox"
